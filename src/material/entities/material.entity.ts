@@ -1,25 +1,25 @@
 import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm'
 
 @Entity()
-export class Supplier {
+export class Material {
   @PrimaryGeneratedColumn()
   id: number
 
   @Column()
-  company_name: string
+  codigo_sku: string
 
   @Column()
-  rut: string
+  name: string
 
   @Column()
-  contact_name: string
+  description: string
 
   @Column()
-  phone_number: string
+  unit_measure: string
 
   @Column()
-  email: string
+  actual_stock: number
 
   @Column()
-  address: string
+  minimum_stock: number
 }
